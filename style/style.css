@@ -75,6 +75,10 @@ a {
   color: #00cc99;
 }
 
+.text-secondary {
+  color: #e64590;
+}
+
 body {
   font-family: 微軟正黑體, sans-serif;
   display: -webkit-box;
@@ -410,12 +414,18 @@ body {
           align-items: center;
 }
 
-.footer a img {
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+.footer .logo {
+  background-image: url(../image/HexSchool-logo-gray.png);
+  width: 174px;
+  height: 36px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
 
-.footer a img:hover {
+.footer .logo:hover {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   opacity: 0.7;
@@ -433,9 +443,5 @@ body {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   opacity: 0.7;
-}
-
-.footer ul li .pink {
-  color: #e64590;
 }
 /*# sourceMappingURL=style.css.map */

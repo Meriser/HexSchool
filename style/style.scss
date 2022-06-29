@@ -107,7 +107,9 @@ $primary: #00cc99;
 .text-primary{
     color: $primary;
 }
-
+.text-secondary{
+    color: #e64590;
+}
 body{
     font-family: 微軟正黑體, sans-serif;
     display: flex;
@@ -334,8 +336,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a img{
-        transition: 0.25s;
+    .logo {
+        background-image: url(../image/HexSchool-logo-gray.png);
+        width: 174px;
+        height: 36px;
+        transition: 0.2s;
+        @include hidden-text;
         &:hover{
             @include hover-light;
         }
@@ -347,9 +353,6 @@ body{
             &:hover{
                 @include hover-light;
             }
-        }
-        .pink{
-            color: #e64590;
         }
     }
 }
